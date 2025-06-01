@@ -39,7 +39,7 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate
 ### 3. Install Dependencies
 
 ```bash
-pip install - all the modules reruired. 
+pip install - all the modules required. 
 ```
 
 ### 4. Download Required Models
