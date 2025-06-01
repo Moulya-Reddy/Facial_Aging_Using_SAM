@@ -5,7 +5,7 @@ The **Facial Aging Using SAM (Style-based Age Manipulation)** project is a deep 
 
 The project requires input images that are preprocessed—aligned and cropped in the **FFHQ format (1024x1024)**—and makes use of a **pretrained SAM model** for age transformation. Additionally, it relies on a **shape predictor** (typically from dlib) to detect facial landmarks during alignment.
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```bash
 Facial_Aging_Using_SAM/
@@ -20,7 +20,7 @@ Facial_Aging_Using_SAM/
 └── README file                
 ````
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -42,7 +42,7 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate
 pip install - all the modules reruired. 
 ```
 
-## ▶️ How to Use
+##  How to Use
 
 ### Step 1: Prepare Input Images
 
@@ -56,6 +56,6 @@ python run_aging.py
 ```
 
 
-## 📦 Pretrained Models
+##  Pretrained Models
 
 Ensure the pretrained SAM model is placed in the `pretrained_models/` directory. You may need to download it separately.
