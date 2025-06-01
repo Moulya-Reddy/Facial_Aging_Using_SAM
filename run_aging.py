@@ -20,8 +20,8 @@ device = 'cpu'
 EXPERIMENT_TYPE = 'fhq_aging'
 EXPERIMENT_DATA_ARGS = {
     "fhq_aging": {
-        "model_path": "/Users/ananthpalreddykandhala/Downloads/SAM-master/pretrained_models/sam_ffhq_aging.pt",
-        "image_path": "/Users/ananthpalreddykandhala/Downloads/SAM-master/notebooks/images/image6.jpg",
+        "model_path": "pretrained_models/sam_ffhq_aging.pt",
+        "image_path": "notebooks/images/image6.jpg",
         "transform": transforms.Compose([
             transforms.Resize((256, 256)),
             transforms.ToTensor(),
@@ -51,7 +51,7 @@ original_image = Image.open(image_path).convert("RGB").resize((256, 256))
 def run_alignment(image_path):
     import dlib
     from scripts.align_all_parallel import align_face
-    predictor = dlib.shape_predictor("/Users/ananthpalreddykandhala/Downloads/SAM-master/shape_predictor_68_face_landmarks.dat.bz2.1.out")
+    predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat.bz2.1.out")
     aligned_image = align_face(filepath=image_path, predictor=predictor)
     print("Aligned image has shape: {}".format(aligned_image.size))
     return aligned_image
