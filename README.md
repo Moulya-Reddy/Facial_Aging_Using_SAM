@@ -42,6 +42,24 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate
 pip install - all the modules reruired. 
 ```
 
+### 4. Download Required Models
+
+####  Shape Predictor (dlib)
+
+```bash
+wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+bzip2 -dk shape_predictor_68_face_landmarks.dat.bz2
+```
+
+Place the extracted `shape_predictor_68_face_landmarks.dat` file in a known location or your working directory.
+
+####  Pretrained SAM Model
+
+Download `sam_ffhq_aging.pt` and place it in the `pretrained_models/` directory.
+
+* Example filename: `pretrained_models/sam_ffhq_aging.pt`
+* This file can typically be obtained from the internet.
+
 ##  How to Use
 
 ### Step 1: Prepare Input Images
